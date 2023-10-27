@@ -12,6 +12,7 @@ def rename_nested(folder, suffix, add=True):
     Args:
         folder (str): the main folder to rename, with the nested as well
         suffix (str): the unique string to add/remove from the path
+        add (bool): define if either to add or remove the suffix unique string 
     """
     amount = 0
     for dirpath, dirnames, filenames in os.walk(folder):
