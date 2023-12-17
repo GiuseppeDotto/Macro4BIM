@@ -29,6 +29,10 @@ app = uiapp.Application
 
 #Uncomment the line below to enable the first input
 source_component_id = UnwrapElement(IN[0]).Id
+# vw= doc.ActiveView
+# source_component_id  = FilteredElementCollector(doc, vw.Id).WhereElementIsNotElementType()
+# source_component_id  = [e.Id for e in source_component_id if e.Category]
+
 
 
 # Collect all used wall types
