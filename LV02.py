@@ -34,7 +34,6 @@ source_component_id = UnwrapElement(IN[0]).Id
 # source_component_id  = [e.Id for e in source_component_id if e.Category]
 
 
-
 # Collect all used wall types
 all_walls = FilteredElementCollector(doc).OfCategory(BuiltInCategory.OST_Walls).WhereElementIsNotElementType()
 used_types = set( [w.GetTypeId() for w in all_walls] )
